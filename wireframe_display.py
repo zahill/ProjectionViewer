@@ -55,19 +55,19 @@ class ProjectionViewer:
         for wireframe in self.wireframes.values():
             wireframe.transform(matrix)
 
-    def rotateX(self, axis, theta):
+    def rotateX(self, theta):
         matrix = wf.rotateXMatrix(theta)
 
         for wireframe in self.wireframes.values():
             wireframe.transform(matrix)
 
-    def rotateY(self, axis, theta):
+    def rotateY(self, theta):
         matrix = wf.rotateYMatrix(theta)
 
         for wireframe in self.wireframes.values():
             wireframe.transform(matrix)
 
-    def rotateZ(self, axis, theta):
+    def rotateZ(self, theta):
         matrix = wf.rotateZMatrix(theta)
 
         for wireframe in self.wireframes.values():
